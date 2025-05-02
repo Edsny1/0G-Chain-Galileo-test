@@ -1,4 +1,32 @@
+![image](https://github.com/molla202/0G/assets/91562185/6eca238f-cd35-411b-9c5a-857fbd80dd33)
 
+
+</h1>
+
+
+ * [Topluluk kanalımız](https://t.me/corenodechat)<br>
+ * [Topluluk Twitter](https://twitter.com/corenodeHQ)<br>
+ * [Discord](https://discord.com/invite/0glabs)<br>
+ * [Twitter](https://twitter.com/0G_labs)<br>
+ * [0G Website](https://0g.ai/)<br>
+ * [0G Blog](https://blog.0g.ai/)<br>
+ * [0G gitbook/docs](https://zerogravity.gitbook.io/0g-doc/)<br>
+ * [0G Telegram](https://t.me/web3_0glabs)<br>
+ * [Blockchain Explorer](https://explorer.corenodehq.com/0G-Testnet.newton)<br>
+
+
+## 💻 Sistem Gereksinimleri
+| Bileşenler | Minimum Gereksinimler | 
+| ------------ | ------------ |
+| CPU |	4|
+| RAM	| 8+ GB |
+| Storage	| 400 GB SSD |
+
+### Public RPC
+
+https://og-testnet-rpc.corenodehq.xyz
+
+https://og-testnet-api.corenodehq.xyz
 ## 1️⃣ Install Required Packages
 
 ```bash
