@@ -36,7 +36,6 @@ User=$USER
 WorkingDirectory=$HOME/galileo
 ExecStart=$HOME/galileo/bin/0gchaind start \\
     --rpc.laddr tcp://0.0.0.0:26657 \\
-    --chain-spec devnet \\
     --kzg.trusted-setup-path=$HOME/galileo/kzg-trusted-setup.json \\
     --engine.jwt-secret-path=$HOME/galileo/jwt-secret.hex \\
     --kzg.implementation=crate-crypto/go-kzg-4844 \\
