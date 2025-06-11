@@ -20,6 +20,7 @@ cd $HOME
 rm -rf galileo
 wget -q https://github.com/0glabs/0gchain-NG/releases/download/v1.2.0/galileo-v1.2.0.tar.gz
 tar -xzf galileo-v1.2.0.tar.gz
+mv galileo-v1.2.0 galileo
 rm galileo-v1.2.0.tar.gz
 chmod +x galileo/bin/0gchaind
 chmod +x galileo/bin/geth
