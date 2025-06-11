@@ -21,8 +21,28 @@ rm -rf galileo
 wget -q https://github.com/0glabs/0gchain-NG/releases/download/v1.2.0/galileo-v1.2.0.tar.gz
 tar -xzf galileo-v1.2.0.tar.gz
 rm galileo-v1.2.0.tar.gz
-chmod +x galileo/bin/0gchaind
-chmod +x galileo/bin/geth
+
+# Check what was actually extracted
+echo "Checking extracted files..."
+ls -la galileo/
+
+# Make binaries executable if they exist
+if [ -f "galileo/bin/0gchaind" ]; then
+    chmod +x galileo/bin/0gchaind
+    echo "✔ 0gchaind binary found and made executable"
+else
+    echo "❌ 0gchaind binary not found in galileo/bin/"
+    echo "Contents of galileo directory:"
+    find galileo/ -type f -name "*0gchaind*" || echo "No 0gchaind binary found"
+    exit 1
+fi
+
+if [ -f "galileo/bin/geth" ]; then
+    chmod +x galileo/bin/geth
+    echo "✔ geth binary found and made executable"
+else
+    echo "⚠ geth binary not found in galileo/bin/ (this might be normal)"
+fi
 
 echo ">>> [4/6] Creating systemd service with IP $SERVER_IP..."
 sudo tee /etc/systemd/system/0gchaind.service > /dev/null <<EOF
